@@ -141,8 +141,6 @@ MEDIA_URL = '/media/'
 
 django_heroku.settings(locals())
 
-DISABLE_COLLECTSTATIC=1
-
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'blog-home'
