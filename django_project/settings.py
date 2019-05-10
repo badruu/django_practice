@@ -123,7 +123,7 @@ USE_TZ = True
 
 #If not written will raise error in heroku.
 # You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path.
-MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
