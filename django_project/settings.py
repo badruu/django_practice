@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['badrdjango.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -140,6 +140,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 django_heroku.settings(locals())
+
+DISABLE_COLLECTSTATIC=1
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
